@@ -10,7 +10,6 @@ public class Demo extends javax.servlet.http.HttpServlet {
                     String type = request.getParameter("type");
                     String start = request.getParameter("start");
                     String end = request.getParameter("end");
-
                     System.out.println(username+department+type+start+end);
 
                 }
