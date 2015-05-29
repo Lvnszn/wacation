@@ -1,1 +1,1 @@
-web: java $JAVA_OPTS -cp target/classes:target/dependency/* CounterWebApp
+web: java $JAVA_OPTS -jar target/dependency/jetty-runner.jar --port 8080 target/*.war 

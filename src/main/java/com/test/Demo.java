@@ -20,7 +20,5 @@ public class Demo extends javax.servlet.http.HttpServlet {
                     doPost(request,response);
                 }
 
-        public static void main(String []args){
-            System.out.print("asdasd");
-        }
+
         }

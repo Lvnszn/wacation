@@ -34,6 +34,20 @@
               <version>2.4</version>
               <executions>
                   <execution>
+                      <phase>package</phase>
+                      <goals><goal>copy</goal></goals>
+                      <configuration>
+                          <artifactItems>
+                              <artifactItem>
+                                  <groupId>org.mortbay.jetty</groupId>
+                                  <artifactId>jetty-runner</artifactId>
+                                  <version>7.4.5.v20110725</version>
+                                  <destFileName>jetty-runner.jar</destFileName>
+                              </artifactItem>
+                          </artifactItems>
+                      </configuration>
+                  </execution>
+                  <execution>
                       <id>copy-dependencies</id>
                       <phase>package</phase>
                       <goals><goal>copy-dependencies</goal></goals>
