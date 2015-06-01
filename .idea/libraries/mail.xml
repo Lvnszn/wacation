@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="mail">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/src/main/webapp/WEB-INF/lib/mail-1.4.1.jar!/com/sun/mail" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

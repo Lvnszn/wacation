@@ -1,7 +1,7 @@
 <component name="libraryTable">
   <library name="mail-1.4.1">
     <CLASSES>
-      <root url="jar://$PROJECT_DIR$/target/dependency/mail-1.4.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/main/webapp/WEB-INF/lib/mail-1.4.1.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />
