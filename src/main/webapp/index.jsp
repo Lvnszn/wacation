@@ -1,41 +1,36 @@
 <html>
-<link href="assets/css/bootstrap.css" rel="stylesheet">
-<link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
-<link href="assets/css/docs.css" rel="stylesheet">
-<link href="assets/js/google-code-prettify/prettify.css" rel="stylesheet">
+<link href="css/bootstrap.css" rel="stylesheet">
+<link href="css/bootstrap.min.css" rel="stylesheet">
 
-    <form class=".form-horizontal" action="${pageContext.request.contextPath}/Demo" method="post">
-        <div class="control-group">
+    <div class="container">
+
+        <form class="form-signin" action="${pageContext.request.contextPath}/Demo" method="post">
+            <h2 class="form-signin-heading">Please</h2>
             <i class="icon-user"></i>
-            <label class="control-label" for="inputEmail">Username</label>
-            <div class="controls">
-                <input type="text" id="inputEmail" placeholder="Email">
-            </div>
-        </div>
-        <div class="control-group">
-            <label class="control-label" for="demo">department</label>
-            <select id="demo" multiple="multiple">
+            <label for="inputEmail" class="sr-only">Username</label>
+            <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
+            <select multiple="multiple" name="department">
                 <option>0</option>
-                <option>1</option>
-                <option>2</option>
-                <option>3</option>
-                <option>4</option>
-            </select>
-        </div>
-        <div class="control-group">
-            <label class="control-label" for="demo2">type</label>
-            <select id="demo2" multiple="multiple">
                 <option>0</option>
-                <option>1</option>
-                <option>2</option>
-                <option>3</option>
-                <option>4</option>
+                <option>0</option>
+                <option>0</option>
+                <option>0</option>
             </select>
-        </div>
+            <select multiple="multiple" name="type">
+                <option>0</option>
+                <option>0</option>
+                <option>0</option>
+                <option>0</option>
+                <option>0</option>
+            </select>
 
-        <p>
-            <button class="btn" type="submit">Default button</button>
-        </p>
-    </form>
+            <button class="btn btn-lg btn-primary btn-block" type="submit">Apply</button>
+        </form>
 
+    </div> <!-- /container -->
+
+
+
+<script src="js/bootstrap.min.js"></script>
+<script src="jquery/jquery-1.8.3.min.js"></script>
 </html>
