@@ -1,17 +1,32 @@
+<%@ page language="java" pageEncoding="UTF-8"%>
 <html>
 <head>
     <script type="text/javascript">
-        function checkUsername() {
-            if (/^[A-Za-z.]+$/.test($('#username').val()))
+
+
+        function check(){
+            if (/^[0-9-]+$/.test($('#phone').val()))
             {
                 return true;
             }
             else
             {
-                alert("error, please input english");
-                $('#username').focus();
+                alert("please input 11 phone number");
+                return false;
             }
+            if (/^[0-9.]+$/.test($('#day').val()))
+            {
+                return true;
+            }
+            else
+            {
+                alert("please input number or point");
+                return false;
+            }
+
         }
+
+
     </script>
     <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
     <link href="css/bootstrap-datetimepicker.min.css" rel="stylesheet" media="screen">
@@ -23,20 +38,24 @@
         <form class="form-signin" action="${pageContext.request.contextPath}/Demo" method="post">
             <h2 class="form-signin-heading">Vacation</h2>
             <label for="username" class="sr-only">Username</label>
-            <input type="text" name="username" id="username" onblur="checkUsername(this)" class="form-control" placeholder="Username In English: Xiaoming" required autofocus><br>
+            <input type="text" name="username" id="username" class="form-control" placeholder="Username" required autofocus><br>
             <select class="form-control" name="department">
+                <option>----</option>
+                <option>Jack</option>
                 <option>Juni</option>
                 <option>Angelo</option>
                 <option>William</option>
-                <option>Alber</option>
+                <option>Albert</option>
                 <option>Dean</option>
             </select><br>
             <select class="form-control" name="type">
-                <option>0</option>
-                <option>e</option>
-                <option>X</option>
-                <option>0</option>
-                <option>0</option>
+                <option>Annual Leave</option>
+                <option>Sick Leave</option>
+                <option>Paternity Leave</option>
+                <option>Condolence Leave</option>
+                <option>Maternity Leave</option>
+                <option>Marriage Leave</option>
+                <option>Unpaid Leave</option>
             </select><br>
             <div class="form-group">
                 <label for="dtp_input2" class="col-md-2 control-label">Date Start</label>
@@ -57,9 +76,15 @@
                 <input type="hidden" id="dtp_input3" value="" />
             </div><br>
 
-            <label for="half" class="sr-only">other</label>
-            <input type="text" name="other" id="half" class="form-control" placeholder="How many days?" required autofocus><br>
-            <button class="btn btn-lg btn-primary btn-block" type="submit">Apply</button>
+            <label for="day" class="sr-only">other</label>
+            <input type="text" name="other" id="day" class="form-control" placeholder="How many days?" ><br>
+            <label for="phone" class="sr-only">phone</label>
+            <input type="text" name="phone" id="phone" class="form-control" placeholder="Contact Phone?" ><br>
+
+            <label for="reason" class="sr-only">phone</label>
+            <textarea name="reason" id="reason" class="form-control" placeholder="Reason" ></textarea><br>
+
+            <button class="btn btn-lg btn-primary btn-block" type="submit" onclick="check()">Apply</button>
         </form>
 
     </div> <!-- /container -->
