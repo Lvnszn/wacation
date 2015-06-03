@@ -28,13 +28,14 @@
 
 
     </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
     <link href="css/bootstrap-datetimepicker.min.css" rel="stylesheet" media="screen">
 </head>
 
 <body>
     <div class="container-fluid">
-
+        <div class="row-fluid">
         <form class="form-signin" action="${pageContext.request.contextPath}/Demo" method="post">
             <h2 class="form-signin-heading">Apply For Leave</h2>
             <label for="username" class="sr-only">Username</label>
@@ -87,7 +88,7 @@
 
             <button class="btn btn-lg btn-primary btn-block" type="submit" onclick="check()">Apply</button>
         </form>
-
+    </div>
     </div> <!-- /container -->
 
 
