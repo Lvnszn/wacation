@@ -5,7 +5,7 @@
 
 
         function check(){
-            if (/^[0-9-]+$/.test($('#phone').val()))
+            if (/^[0-9-]{11,20}$/.test($('#phone').val()))
             {
                 return true;
             }
@@ -36,7 +36,7 @@
 <body>
     <div class="container-fluid">
         <div class="row-fluid">
-        <form class="form-signin" action="${pageContext.request.contextPath}/Demo" method="post">
+        <form class="form-signin" name="fom" onSubmit="check();" action="${pageContext.request.contextPath}/Demo" method="post">
             <h2 class="form-signin-heading">Apply For Leave</h2>
             <label for="username" class="sr-only">Username</label>
             <input type="text" name="username" id="username" class="form-control" placeholder="Username" required autofocus><br>
@@ -79,14 +79,14 @@
             </div><br>
 
             <label for="day" class="sr-only">other</label>
-            <input type="text" name="other" id="day" class="form-control" placeholder="How many days?" ><br>
+            <input type="text" name="other" id="day" class="form-control" placeholder="How many days?" required autofocus><br>
             <label for="phone" class="sr-only">phone</label>
-            <input type="text" name="phone" id="phone" class="form-control" placeholder="Contact Phone?" ><br>
+            <input type="text" name="phone" id="phone" class="form-control" placeholder="Contact Phone?" required autofocus><br>
 
             <label for="reason" class="sr-only">phone</label>
             <textarea name="reason" id="reason" class="form-control" placeholder="Reason" ></textarea><br>
 
-            <button class="btn btn-lg btn-primary btn-block" type="submit" onclick="check()">Apply</button>
+            <button class="btn btn-lg btn-primary btn-block" type="submit">Apply</button>
         </form>
     </div>
     </div> <!-- /container -->
