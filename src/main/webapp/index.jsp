@@ -5,6 +5,33 @@
 
 
         function check(){
+            if ($('#username').val()!=null)
+            {
+                return true;
+            }
+            else
+            {
+                alert("please type name");
+                return false;
+            }
+            if ($('#start').val()!=null)
+            {
+                return true;
+            }
+            else
+            {
+                alert("please type start time");
+                return false;
+            }
+            if ($('#end').val()!=null)
+            {
+                return true;
+            }
+            else
+            {
+                alert("please type end time");
+                return false;
+            }
             if (/^[0-9-]{11,20}$/.test($('#phone').val()))
             {
                 return true;
@@ -36,7 +63,7 @@
 <body>
     <div class="container-fluid">
         <div class="row-fluid">
-        <form class="form-signin" name="fom" onsubmit="check();" action="${pageContext.request.contextPath}/Demo" method="post">
+        <form class="form-signin" name="fom" onsubmit="return check();" action="${pageContext.request.contextPath}/Demo" method="post">
             <h2 class="form-signin-heading">Apply For Leave</h2>
             <label for="username" class="sr-only">Username</label>
             <input type="text" name="username" id="username" class="form-control" placeholder="Username" required autofocus><br>
