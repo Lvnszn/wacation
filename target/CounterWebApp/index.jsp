@@ -5,9 +5,36 @@
 
 
         function check(){
+            if (!$('#username').val()=="")
+            {
+                ;
+            }
+            else
+            {
+                alert("please type name");
+                return false;
+            }
+            if (!$('#start').val()=="")
+            {
+                ;
+            }
+            else
+            {
+                alert("please type start time");
+                return false;
+            }
+            if (!$('#end').val()=="")
+            {
+                ;
+            }
+            else
+            {
+                alert("please type end time");
+                return false;
+            }
             if (/^[0-9-]{11,20}$/.test($('#phone').val()))
             {
-                return true;
+                ;
             }
             else
             {
@@ -24,6 +51,8 @@
                 return false;
             }
 
+
+
         }
 
 
@@ -36,7 +65,7 @@
 <body>
     <div class="container-fluid">
         <div class="row-fluid">
-        <form class="form-signin" name="fom" onSubmit="check();" action="${pageContext.request.contextPath}/Demo" method="post">
+        <form class="form-signin" name="fom" onsubmit="return check();" action="${pageContext.request.contextPath}/Demo" method="post">
             <h2 class="form-signin-heading">Apply For Leave</h2>
             <label for="username" class="sr-only">Username</label>
             <input type="text" name="username" id="username" class="form-control" placeholder="Username" required autofocus><br>
@@ -62,7 +91,7 @@
             <div class="form-group">
                 <label for="dtp_input2" class="col-md-2 control-label">Date Start</label>
                 <div class="input-group date form_date col-md-5" data-date="" data-date-format="dd MM yyyy" data-link-field="dtp_input2" data-link-format="yyyy-mm-dd">
-                    <input class="form-control" name="start" size="16" type="text" value="" readonly>
+                    <input class="form-control" id="start" name="start" size="16" type="text" value="" readonly>
                     <span class="input-group-addon"><span class="glyphicon glyphicon-remove"></span></span>
                     <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>
                 </div>
@@ -71,7 +100,7 @@
             <div class="form-group">
                 <label for="dtp_input2" class="col-md-2 control-label">Date End</label>
                 <div class="input-group date form_date col-md-5" data-date="" data-date-format="dd MM yyyy" data-link-field="dtp_input3" data-link-format="yyyy-mm-dd">
-                    <input class="form-control" name="end" size="16" type="text" value="" readonly>
+                    <input class="form-control" id="end" name="end" size="16" type="text" value="" readonly>
                     <span class="input-group-addon"><span class="glyphicon glyphicon-remove"></span></span>
                     <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>
                 </div>

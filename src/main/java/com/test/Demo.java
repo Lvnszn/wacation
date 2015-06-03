@@ -34,7 +34,7 @@ public class Demo extends javax.servlet.http.HttpServlet {
         String reason = request.getParameter("reason");
 
 
-        String []to = {"jason.peng@xplusz.com","juni.yang@xplusz.com","jessie.yu@xplusz.com"};
+        String []to = {"jason.peng@xplusz.com"};
 
         String text =
                 "<div style='width:1024px;height:auto;margin:0px auto;font-size:14px;font-family:微软雅黑;border-radius:5px;padding:5px;'><center><h3>"+

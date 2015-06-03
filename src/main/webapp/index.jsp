@@ -5,27 +5,27 @@
 
 
         function check(){
-            if ($('#username').val()!=null)
+            if (!$('#username').val()=="")
             {
-                return true;
+                ;
             }
             else
             {
                 alert("please type name");
                 return false;
             }
-            if ($('#start').val()!=null)
+            if (!$('#start').val()=="")
             {
-                return true;
+                ;
             }
             else
             {
                 alert("please type start time");
                 return false;
             }
-            if ($('#end').val()!=null)
+            if (!$('#end').val()=="")
             {
-                return true;
+                ;
             }
             else
             {
@@ -34,7 +34,7 @@
             }
             if (/^[0-9-]{11,20}$/.test($('#phone').val()))
             {
-                return true;
+                ;
             }
             else
             {
@@ -50,6 +50,8 @@
                 alert("please input number or point");
                 return false;
             }
+
+
 
         }
 
@@ -89,7 +91,7 @@
             <div class="form-group">
                 <label for="dtp_input2" class="col-md-2 control-label">Date Start</label>
                 <div class="input-group date form_date col-md-5" data-date="" data-date-format="dd MM yyyy" data-link-field="dtp_input2" data-link-format="yyyy-mm-dd">
-                    <input class="form-control" name="start" size="16" type="text" value="" readonly>
+                    <input class="form-control" id="start" name="start" size="16" type="text" value="" readonly>
                     <span class="input-group-addon"><span class="glyphicon glyphicon-remove"></span></span>
                     <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>
                 </div>
@@ -98,7 +100,7 @@
             <div class="form-group">
                 <label for="dtp_input2" class="col-md-2 control-label">Date End</label>
                 <div class="input-group date form_date col-md-5" data-date="" data-date-format="dd MM yyyy" data-link-field="dtp_input3" data-link-format="yyyy-mm-dd">
-                    <input class="form-control" name="end" size="16" type="text" value="" readonly>
+                    <input class="form-control" id="end" name="end" size="16" type="text" value="" readonly>
                     <span class="input-group-addon"><span class="glyphicon glyphicon-remove"></span></span>
                     <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>
                 </div>
