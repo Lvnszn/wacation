@@ -33,22 +33,23 @@
 </head>
 
 <body>
-    <div class="container">
+    <div class="container-fluid">
 
         <form class="form-signin" action="${pageContext.request.contextPath}/Demo" method="post">
-            <h2 class="form-signin-heading">Vacation</h2>
+            <h2 class="form-signin-heading">Apply For Leave</h2>
             <label for="username" class="sr-only">Username</label>
             <input type="text" name="username" id="username" class="form-control" placeholder="Username" required autofocus><br>
             <select class="form-control" name="department">
-                <option>----</option>
-                <option>Jack</option>
-                <option>Juni</option>
-                <option>Angelo</option>
-                <option>William</option>
-                <option>Albert</option>
-                <option>Dean</option>
+                <option>项目组</option>
+                <option>Epic</option>
+                <option>CRM</option>
+                <option>Pulse</option>
+                <option>Ratchet</option>
+                <option>Web Bench</option>
+                <option>HR</option>
             </select><br>
             <select class="form-control" name="type">
+                <option>请假类型</option>
                 <option>Annual Leave</option>
                 <option>Sick Leave</option>
                 <option>Paternity Leave</option>
