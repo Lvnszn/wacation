@@ -36,7 +36,7 @@
 <body>
     <div class="container-fluid">
         <div class="row-fluid">
-        <form class="form-signin" name="fom" onSubmit="check();" action="${pageContext.request.contextPath}/Demo" method="post">
+        <form class="form-signin" name="fom" onsubmit="check();" action="${pageContext.request.contextPath}/Demo" method="post">
             <h2 class="form-signin-heading">Apply For Leave</h2>
             <label for="username" class="sr-only">Username</label>
             <input type="text" name="username" id="username" class="form-control" placeholder="Username" required autofocus><br>

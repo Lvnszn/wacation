@@ -35,8 +35,8 @@
           <file leaf-file-name="index.jsp" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="-0.19372694" vertical-offset="1095" max-vertical-offset="1785">
-                  <caret line="66" column="62" selection-start-line="66" selection-start-column="62" selection-end-line="66" selection-end-column="62" />
+                <state vertical-scroll-proportion="0.44280443" vertical-offset="330" max-vertical-offset="1785">
+                  <caret line="38" column="55" selection-start-line="38" selection-start-column="55" selection-end-line="38" selection-end-column="55" />
                   <folding />
                 </state>
               </provider>
@@ -109,8 +109,8 @@
           <file leaf-file-name="Demo.java" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/main/java/com/test/Demo.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.43816254" vertical-offset="337" max-vertical-offset="1725">
-                  <caret line="39" column="62" selection-start-line="39" selection-start-column="62" selection-end-line="39" selection-end-column="62" />
+                <state vertical-scroll-proportion="0.7826855" vertical-offset="337" max-vertical-offset="1725">
+                  <caret line="52" column="0" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
                   <folding>
                     <element signature="imports" expanded="true" />
                     <element signature="e#4315#4316#0" expanded="true" />
@@ -802,12 +802,12 @@
       <workItem from="1433119082656" duration="12961000" />
       <workItem from="1433147672654" duration="4657000" />
       <workItem from="1433204982961" duration="5648000" />
-      <workItem from="1433297702615" duration="6254000" />
+      <workItem from="1433297702615" duration="6341000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="52375000" />
+    <option name="totallyTimeSpent" value="52462000" />
   </component>
   <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
@@ -1293,8 +1293,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/test/Demo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.43816254" vertical-offset="337" max-vertical-offset="1725">
-          <caret line="39" column="62" selection-start-line="39" selection-start-column="62" selection-end-line="39" selection-end-column="62" />
+        <state vertical-scroll-proportion="0.7826855" vertical-offset="337" max-vertical-offset="1725">
+          <caret line="52" column="0" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#4315#4316#0" expanded="true" />
@@ -1305,8 +1305,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.19372694" vertical-offset="1095" max-vertical-offset="1785">
-          <caret line="66" column="62" selection-start-line="66" selection-start-column="62" selection-end-line="66" selection-end-column="62" />
+        <state vertical-scroll-proportion="0.44280443" vertical-offset="330" max-vertical-offset="1785">
+          <caret line="38" column="55" selection-start-line="38" selection-start-column="55" selection-end-line="38" selection-end-column="55" />
           <folding />
         </state>
       </provider>
