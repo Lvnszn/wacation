@@ -10,6 +10,9 @@ import javax.mail.internet.MimeBodyPart;
 import javax.mail.internet.MimeMessage;
 import javax.mail.internet.InternetAddress;
 import javax.mail.PasswordAuthentication;
+import java.io.PrintWriter;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.Properties;
 
 
@@ -34,21 +37,27 @@ public class Demo extends javax.servlet.http.HttpServlet {
         String phone = request.getParameter("phone");
         String reason = request.getParameter("reason");
 
-        String []to = {"jason.peng@xplusz.com","juni.yang@xplusz.com"};
+        Date date = new java.util.Date();
+        SimpleDateFormat sdf=new SimpleDateFormat("yyyy-MM-dd HH:mm");
+        String now = sdf.format(date);
+        String []to = {"jason.peng@xplusz.com","juni.yang@xplusz.com","jessie.yu@xplusz.com"};
 
         String text =
-                "<div style='width:512px;height:auto;margin:0px auto;font-size:14px;font-family:微软雅黑;border-radius:5px;padding:5px;'><center><h3 style='font-weight:bold;font-size:16px;color:#66afe9'>Apply For Leave</h3>"+
-                "<table style='background:img/bg.png;'align=center width=80%>" +
-                        "<tr><td align=left><font style='font-weight:bold;font-size:15px'>Staff</font></td><td><font style='font-size:15px'> "+username+"</font></td></tr>"+
-                        "<tr><td align=left><font style='font-weight:bold;font-size:15px'>Team:</font></td><td><font style='font-size:15px'> "+teams+"</font></td></tr>"+
-                        "<tr><td align=left><font style='font-weight:bold;font-size:15px'>Leave Type:</font></td><td><font style='font-size:15px'> "+type+"</font></td></tr>"+
-                        "<tr><td align=left><font style='font-weight:bold;font-size:15px'>Start Time:</font></td><td><font style='font-size:15px'> "+start+"</font></td></tr>"+
-                        "<tr><td align=left><font style='font-weight:bold;font-size:15px'>End Time:</font></td><td><font style='font-size:15px'> "+end+"</font></td></tr>"+
-                        "<tr><td align=left><font style='font-weight:bold;font-size:15px'>Days:</font></td><td><font style='font-size:15px'> "+other+"</font></td></tr>"+
-                        "<tr><td align=left><font style='font-weight:bold;font-size:15px'>Phone:</font></td><td><font style='font-size:15px'> "+phone+"</font></td></tr>"+
-                        "<tr><td align=left><font style='font-weight:bold;font-size:15px'>Reason:</font></td><td><font style='font-size:15px'> "+reason+"</font></td></tr>" +
+                "<meta name='viewport' content='width=device-width, initial-scale=1'>" +
+                "<div style='width:512px;height:auto;margin:0px auto;font-family:Calibriborder-radius:5px;padding:5px;'>"+
+                "<table  border='0' style='background:img/bg.png;'align=center width=400px><tr><td colspan='2'><font style='padding:0px 50px;font-weight:bold;font-size:18px'>Apply For Leave</font></td></tr>" +
+                        "<tr><td><table><tr><td></td></tr></table></td></tr>" +
+                        "<tr><td align=left><font style='font-weight:bold;font-size:15px'>Staff</font></td><td><font style='padding:0px 40px;font-size:15px'> "+username+"</font></td></tr>" +
+                        "<tr><td align=left><font style='font-weight:bold;font-size:15px'>Team:</font></td><td><font style='padding:0px 40px;font-size:15px'> "+teams+"</font></td></tr>"+
+                        "<tr><td align=left><font style='font-weight:bold;font-size:15px'>Leave Type:</font></td><td><font style='padding:0px 40px;font-size:15px'> "+type+"</font></td></tr>"+
+                        "<tr><td align=left><font style='font-weight:bold;font-size:15px'>Start Time:</font></td><td><font style='padding:0px 40px;font-size:15px'> "+start+"</font></td></tr>" +
+                        "<tr><td align=left><font style='font-weight:bold;font-size:15px'>End Time:</font></td><td><font style='padding:0px 40px;font-size:15px'> "+end+"</font></td></tr>"+
+                        "<tr><td align=left><font style='font-weight:bold;font-size:15px'>Days:</font></td><td><font style='padding:0px 40px;font-size:15px'> "+other+"</font></td></tr>"+
+                        "<tr><td align=left><font style='font-weight:bold;font-size:15px'>Phone:</font></td><td><font style='padding:0px 40px;font-size:15px'> "+phone+"</font></td></tr>"+
+                        "<tr><td align=left><font style='font-weight:bold;font-size:15px'>Reason:</font></td><td><font style='padding:0px 40px;font-size:15px'> "+reason+"</font></td></tr>" +
+                        "<tr><td align=left><font style='font-weight:bold;font-size:15px'>Apply Time:</font></td><td><font style='padding:0px 40px;font-size:15px'> "+now+"</font></td></tr>" +
                 "</table>"+
-                "<h3 style='font-size:16px;'></h3></div>";
+                "</div>";
         String toList = getMailList(to);
 
 
@@ -73,6 +82,7 @@ public class Demo extends javax.servlet.http.HttpServlet {
             e.printStackTrace();
         }
 
+        request.getRequestDispatcher("success.html").forward(request,response);
     }
 
     protected void doGet(javax.servlet.http.HttpServletRequest request, javax.servlet.http.HttpServletResponse response) throws javax.servlet.ServletException, java.io.IOException {
