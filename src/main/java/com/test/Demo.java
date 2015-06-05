@@ -6,6 +6,7 @@ import javax.mail.Authenticator;
 import javax.mail.Session;
 import javax.mail.Message;
 import javax.mail.Transport;
+import javax.mail.internet.MimeBodyPart;
 import javax.mail.internet.MimeMessage;
 import javax.mail.internet.InternetAddress;
 import javax.mail.PasswordAuthentication;
@@ -33,21 +34,21 @@ public class Demo extends javax.servlet.http.HttpServlet {
         String phone = request.getParameter("phone");
         String reason = request.getParameter("reason");
 
-
-        String []to = {"jason.peng@xplusz.com"};
+        String []to = {"jason.peng@xplusz.com","juni.yang@xplusz.com"};
 
         String text =
-                "<div style='width:1024px;height:auto;margin:0px auto;font-size:14px;font-family:微软雅黑;border-radius:5px;padding:5px;'><center><h3>"+
-                "<table align=left width=25%><tr><td align=left>Staff</td><td> "+username+"</td></tr>"+
-                        "<tr><td align=left>Team:</td><td> "+teams+"</td></tr>"+
-                        "<tr><td align=left>Leave Type:</td><td> "+type+"</td></tr>"+
-                        "<tr><td align=left>Start Time:</td><td> "+start+"</td></tr>"+
-                        "<tr><td align=left>End Time:</td><td> "+end+"</td></tr>"+
-                        "<tr><td align=left>Days:</td><td> "+other+"</td></tr>"+
-                        "<tr><td align=left>Phone:</td><td> "+phone+"</td></tr>"+
-                        "<tr><td align=left>Reason:</td><td> "+reason+"</td></tr>" +
+                "<div style='width:512px;height:auto;margin:0px auto;font-size:14px;font-family:微软雅黑;border-radius:5px;padding:5px;'><center><h3 style='font-weight:bold;font-size:16px;color:#66afe9'>Apply For Leave</h3>"+
+                "<table style='background:img/bg.png;'align=center width=80%>" +
+                        "<tr><td align=left><font style='font-weight:bold;font-size:15px'>Staff</font></td><td><font style='font-size:15px'> "+username+"</font></td></tr>"+
+                        "<tr><td align=left><font style='font-weight:bold;font-size:15px'>Team:</font></td><td><font style='font-size:15px'> "+teams+"</font></td></tr>"+
+                        "<tr><td align=left><font style='font-weight:bold;font-size:15px'>Leave Type:</font></td><td><font style='font-size:15px'> "+type+"</font></td></tr>"+
+                        "<tr><td align=left><font style='font-weight:bold;font-size:15px'>Start Time:</font></td><td><font style='font-size:15px'> "+start+"</font></td></tr>"+
+                        "<tr><td align=left><font style='font-weight:bold;font-size:15px'>End Time:</font></td><td><font style='font-size:15px'> "+end+"</font></td></tr>"+
+                        "<tr><td align=left><font style='font-weight:bold;font-size:15px'>Days:</font></td><td><font style='font-size:15px'> "+other+"</font></td></tr>"+
+                        "<tr><td align=left><font style='font-weight:bold;font-size:15px'>Phone:</font></td><td><font style='font-size:15px'> "+phone+"</font></td></tr>"+
+                        "<tr><td align=left><font style='font-weight:bold;font-size:15px'>Reason:</font></td><td><font style='font-size:15px'> "+reason+"</font></td></tr>" +
                 "</table>"+
-                "</div>";
+                "<h3 style='font-size:16px;'></h3></div>";
         String toList = getMailList(to);
 
 

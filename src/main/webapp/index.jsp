@@ -32,6 +32,24 @@
                 alert("please type end time");
                 return false;
             }
+            if (!$('#day').val()=="")
+            {
+                ;
+            }
+            else
+            {
+                alert("please type day");
+                return false;
+            }
+            if (!$('#phone').val()=="")
+            {
+                ;
+            }
+            else
+            {
+                alert("please type phone");
+                return false;
+            }
             if (/^[0-9-]{11,20}$/.test($('#phone').val()))
             {
                 ;
@@ -68,7 +86,7 @@
         <form class="form-signin" name="fom" onsubmit="return check();" action="${pageContext.request.contextPath}/Demo" method="post">
             <h2 class="form-signin-heading">Apply For Leave</h2>
             <label for="username" class="sr-only">Username</label>
-            <input type="text" name="username" id="username" class="form-control" placeholder="Username" required autofocus><br>
+            <input type="text" name="username" id="username" class="form-control" placeholder="Name" required autofocus><br>
             <select class="form-control" name="department">
                 <option>项目组</option>
                 <option>Epic</option>
