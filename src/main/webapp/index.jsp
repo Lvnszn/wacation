@@ -88,7 +88,7 @@
             <label for="username" class="sr-only">Username</label>
             <input type="text" name="username" id="username" class="form-control" placeholder="Name" required autofocus><br>
             <select class="form-control" name="department">
-                <option>项目组</option>
+                <option>Team</option>
                 <option>Epic</option>
                 <option>CRM</option>
                 <option>Pulse</option>
@@ -97,7 +97,7 @@
                 <option>HR</option>
             </select><br>
             <select class="form-control" name="type">
-                <option>请假类型</option>
+                <option>Leave Type</option>
                 <option>Annual Leave</option>
                 <option>Sick Leave</option>
                 <option>Paternity Leave</option>

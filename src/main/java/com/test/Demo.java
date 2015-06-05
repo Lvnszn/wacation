@@ -6,11 +6,9 @@ import javax.mail.Authenticator;
 import javax.mail.Session;
 import javax.mail.Message;
 import javax.mail.Transport;
-import javax.mail.internet.MimeBodyPart;
 import javax.mail.internet.MimeMessage;
 import javax.mail.internet.InternetAddress;
 import javax.mail.PasswordAuthentication;
-import java.io.PrintWriter;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Properties;
@@ -40,7 +38,7 @@ public class Demo extends javax.servlet.http.HttpServlet {
         Date date = new java.util.Date();
         SimpleDateFormat sdf=new SimpleDateFormat("yyyy-MM-dd HH:mm");
         String now = sdf.format(date);
-        String []to = {"jason.peng@xplusz.com","juni.yang@xplusz.com","jessie.yu@xplusz.com"};
+        String []to = {"jason.peng@xplusz.com","juni.yang@xplusz.com","jack@xplusz.com"};
 
         String text =
                 "<meta name='viewport' content='width=device-width, initial-scale=1'>" +
