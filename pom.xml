@@ -30,8 +30,8 @@
       </dependency>
       <dependency>
           <groupId>org.jodd</groupId>
-          <artifactId>jodd-core</artifactId>
-          <version>${jodd.version}</version>
+          <artifactId>jodd-mail</artifactId>
+          <version>3.6.4</version>
       </dependency>
   </dependencies>
 

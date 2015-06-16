@@ -1,0 +1,53 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="pragma" content="no-cache">
+    <meta http-equiv="cache-control" content="no-cache">
+    <meta http-equiv="expires" content="0">
+    <meta http-equiv="Refresh" content="4; url=index.jsp" />
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="css/bootstrap-datetimepicker.min.css" rel="stylesheet" media="screen">
+</head>
+
+<body>
+<table border="0" align="center" cellpadding="5" cellspacing="1"
+       style="font-size: 14px; color: #333333; margin-top: 100px; background: #70afd3">
+    <tr style="color: #FFFFFF">
+        <th>
+            提示信息
+        </th>
+    </tr>
+    <tr>
+        <td height="100" style="font-size: 12px; background: #FFFFFF">
+            <div style="font-size: 14px; font-weight: bold; margin: 10px;">
+                Apply Successful
+            </div>
+            <div style="margin: 10px;">
+                系统将在
+                <span id="countDownSec" style="color: blue; font-weight: bold"></span> 秒后自动跳转,如果不想等待,直接
+                <a href=index.jsp style="color: #069;">点击这里</a>
+            </div>
+        </td>
+    </tr>
+</table>
+<script language="javascript" type="text/javascript">
+    var countDown = function(timer,eleId,interType){
+        document.getElementById(eleId).innerHTML = timer;
+        var interval = interType=='s'?1000:(interType=='m'?1000*60:1000*60*60);
+        window.setInterval(function(){
+            timer--;
+            if (timer > 0) {
+                document.getElementById(eleId).innerHTML = timer;
+            }
+        },interval);
+    };
+
+    countDown(4,'countDownSec','s');
+
+</script>
+<script src="jquery/jquery-1.8.3.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+</body>
+</html>
