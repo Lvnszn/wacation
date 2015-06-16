@@ -67,7 +67,7 @@
         <div class="row-fluid">
         <form class="form-signin" name="fom" onsubmit="return check();" action="${pageContext.request.contextPath}/Demo" method="post">
             <h2 class="form-signin-heading">Apply For Leave</h2>
-            <select class="form-control" name="username">
+            <select class="form-control" name="username" id="username">
                 <option>Staff</option>
                 <option>Angela Yao</option>
                 <option>Angelo Chen</option>
@@ -93,7 +93,7 @@
                 <option>Juni Yang</option>
                 <option>Michael Zhao</option>
                 <option>Owen Xu</option>
-                <option>Rosie Zhou</option
+                <option>Rosie Zhou</option>
                 <option>Sandy Chen</option>
                 <option>Scandy Shen</option>
                 <option>Simon Chen</option>
