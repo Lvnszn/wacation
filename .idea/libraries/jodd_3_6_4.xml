@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="jodd-3.6.4">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../../jodd-3.6.4.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

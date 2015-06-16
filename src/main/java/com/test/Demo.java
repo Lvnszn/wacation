@@ -2,13 +2,9 @@ package com.test;
 
 
 
-import javax.mail.Authenticator;
-import javax.mail.Session;
-import javax.mail.Message;
-import javax.mail.Transport;
-import javax.mail.internet.MimeMessage;
-import javax.mail.internet.InternetAddress;
-import javax.mail.PasswordAuthentication;
+import jodd.mail.*;
+
+import java.io.FileInputStream;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Properties;
@@ -19,13 +15,22 @@ import java.util.Properties;
  */
 public class Demo extends javax.servlet.http.HttpServlet {
 
-    public static final String FROM = "18036086690@163.com";
-    public static final String MIMA = "pjx94!";
-    public static final String CONTENT_TYPE = "text/html;charset=utf-8";
-    public static final String SUBJECT = "Apply For Leave";
 
 
     protected void doPost(javax.servlet.http.HttpServletRequest request, javax.servlet.http.HttpServletResponse response) throws javax.servlet.ServletException, java.io.IOException {
+
+        Properties prop = new Properties();
+        FileInputStream in = new FileInputStream("config.properties");
+
+        prop.load(in);
+
+        String FROM = prop.getProperty("FROM");
+        String MIMA = prop.getProperty("MIMA");
+        String SUBJECT = prop.getProperty("SUBJECT");
+        String HOST = prop.getProperty("HOST");
+        String PORT = prop.getProperty("PORT");
+        String to[] = getTo(prop.getProperty("TO"));
+
         String username = request.getParameter("username");
         String teams = request.getParameter("department");
         String type = request.getParameter("type");
@@ -38,7 +43,6 @@ public class Demo extends javax.servlet.http.HttpServlet {
         Date date = new java.util.Date();
         SimpleDateFormat sdf=new SimpleDateFormat("yyyy-MM-dd HH:mm");
         String now = sdf.format(date);
-        String []to = {"jason.peng@xplusz.com","juni.yang@xplusz.com","jack@xplusz.com"};
 
         String text =
                 "<meta name='viewport' content='width=device-width, initial-scale=1'>" +
@@ -56,29 +60,21 @@ public class Demo extends javax.servlet.http.HttpServlet {
                         "<tr><td align=left><font style='font-weight:bold;font-size:15px'>Apply Time:</font></td><td><font style='padding:0px 40px;font-size:15px'> "+now+"</font></td></tr>" +
                 "</table>"+
                 "</div>";
-        String toList = getMailList(to);
 
+        Email email = Email.create()
+                .from(FROM)
+                .to(to)
+                .subject(SUBJECT)
+                .addHtml("<html><META http-equiv=Content-Type content=\"text/html; charset=utf-8\">" +
+                        text + "</html>");
 
-        Properties properties = new Properties();
-        properties.setProperty("mail.transport.protocol", "smtp");
-        properties.put("mail.smtp.host", "smtp.163.com");
-        properties.setProperty("mail.smtp.auth", "true");
-
-        Authenticator auth = new AjavaAuthenticator(FROM,MIMA);
-        Session session = Session.getDefaultInstance(properties, auth);
-        try {
-            InternetAddress[] iaToList = new InternetAddress().parse(toList);
-            Message message = new MimeMessage(session);//Message存储发送的电子邮件信息
-            message.setFrom(new InternetAddress(FROM));
-            message.setRecipients(Message.RecipientType.TO, iaToList);//设置收信邮箱
-            message.setSubject(SUBJECT);//设置主题
-//                message.setText(text);//设置内容
-            message.setContent(text, CONTENT_TYPE);//设置内容
-
-            Transport.send(message,message.getAllRecipients());//发送
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
+        SmtpServer mailSession =
+                new SmtpServer(HOST,Integer.parseInt(PORT));
+        mailSession.authenticateWith(FROM, MIMA);
+        SendMailSession session = mailSession.createSession();
+        session.open();
+        session.sendMail(email);
+        session.close();
 
         request.getRequestDispatcher("success.html").forward(request,response);
     }
@@ -87,33 +83,13 @@ public class Demo extends javax.servlet.http.HttpServlet {
         doPost(request,response);
     }
 
-    private String getMailList(String[] mailArray) {
 
-        StringBuffer toList = new StringBuffer();
-        int length = mailArray.length;
-        if (mailArray != null && length < 2) {
-            toList.append(mailArray[0]);
-        } else {
-            for (int i = 0; i < length; i++) {
-                toList.append(mailArray[i]);
-                if (i != (length - 1)) {
-                    toList.append(",");
-                }
-
-            }
+    private String[] getTo(String toWithQuet) {
+        if(toWithQuet==null||!toWithQuet.contains(",")){
+            return null;
         }
-        return toList.toString();
+        String to[] = toWithQuet.split(",");
+        return to;
     }
-}
-class AjavaAuthenticator extends Authenticator {
-    private String user;
-    private String pwd;
-    public AjavaAuthenticator(String user, String pwd) {
-        this.user = user;
-        this.pwd = pwd;
-    }
-    @Override
-    protected PasswordAuthentication getPasswordAuthentication() {
-        return new PasswordAuthentication(user, pwd);
-    }
+
 }

@@ -7,6 +7,10 @@
   <version>1.0-SNAPSHOT</version>
   <name>CounterWebApp Maven Webapp</name>
   <url>http://maven.apache.org</url>
+    <properties>
+        <javamail.version>1.4.1</javamail.version>
+        <jodd.version>3.6.4</jodd.version>
+    </properties>
   <dependencies>
       <dependency>
           <groupId>junit</groupId>
@@ -24,10 +28,13 @@
           <artifactId>mail</artifactId>
           <version>${javamail.version}</version>
       </dependency>
+      <dependency>
+          <groupId>org.jodd</groupId>
+          <artifactId>jodd</artifactId>
+          <version>${jodd.version}</version>
+      </dependency>
   </dependencies>
-    <properties>
-        <javamail.version>1.4.1</javamail.version>
-    </properties>
+
 
 
     <build>
