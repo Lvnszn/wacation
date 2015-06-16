@@ -1,8 +1,10 @@
 package com.test;
 
 
-
-import jodd.mail.*;
+import jodd.mail.SendMailSession;
+import jodd.mail.SimpleAuthenticator;
+import jodd.mail.SmtpServer;
+import jodd.mail.Email;
 
 import java.io.FileInputStream;
 import java.text.SimpleDateFormat;
@@ -32,12 +34,10 @@ public class Demo extends javax.servlet.http.HttpServlet {
         String to[] = getTo(prop.getProperty("TO"));
 
         String username = request.getParameter("username");
-        String teams = request.getParameter("department");
         String type = request.getParameter("type");
         String start = request.getParameter("start");
         String end = request.getParameter("end");
         String other = request.getParameter("other");
-        String phone = request.getParameter("phone");
         String reason = request.getParameter("reason");
 
         Date date = new java.util.Date();
@@ -50,12 +50,10 @@ public class Demo extends javax.servlet.http.HttpServlet {
                 "<table  border='0' style='background:img/bg.png;'align=center width=400px><tr><td colspan='2'><font style='padding:0px 50px;font-weight:bold;font-size:18px'>Apply For Leave</font></td></tr>" +
                         "<tr><td><table><tr><td></td></tr></table></td></tr>" +
                         "<tr><td align=left><font style='font-weight:bold;font-size:15px'>Staff</font></td><td><font style='padding:0px 40px;font-size:15px'> "+username+"</font></td></tr>" +
-                        "<tr><td align=left><font style='font-weight:bold;font-size:15px'>Team:</font></td><td><font style='padding:0px 40px;font-size:15px'> "+teams+"</font></td></tr>"+
                         "<tr><td align=left><font style='font-weight:bold;font-size:15px'>Leave Type:</font></td><td><font style='padding:0px 40px;font-size:15px'> "+type+"</font></td></tr>"+
                         "<tr><td align=left><font style='font-weight:bold;font-size:15px'>Start Time:</font></td><td><font style='padding:0px 40px;font-size:15px'> "+start+"</font></td></tr>" +
                         "<tr><td align=left><font style='font-weight:bold;font-size:15px'>End Time:</font></td><td><font style='padding:0px 40px;font-size:15px'> "+end+"</font></td></tr>"+
                         "<tr><td align=left><font style='font-weight:bold;font-size:15px'>Days:</font></td><td><font style='padding:0px 40px;font-size:15px'> "+other+"</font></td></tr>"+
-                        "<tr><td align=left><font style='font-weight:bold;font-size:15px'>Phone:</font></td><td><font style='padding:0px 40px;font-size:15px'> "+phone+"</font></td></tr>"+
                         "<tr><td align=left><font style='font-weight:bold;font-size:15px'>Reason:</font></td><td><font style='padding:0px 40px;font-size:15px'> "+reason+"</font></td></tr>" +
                         "<tr><td align=left><font style='font-weight:bold;font-size:15px'>Apply Time:</font></td><td><font style='padding:0px 40px;font-size:15px'> "+now+"</font></td></tr>" +
                 "</table>"+
