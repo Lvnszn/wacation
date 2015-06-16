@@ -2,15 +2,87 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6474c71a-30d2-4f41-b320-9166376416db" name="Default" comment="">
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/config.properties" afterPath="$PROJECT_DIR$/config.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/CounterWebApp.war" afterPath="$PROJECT_DIR$/target/CounterWebApp.war" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/CounterWebApp/WEB-INF/classes/com/test/Demo.class" afterPath="$PROJECT_DIR$/target/CounterWebApp/WEB-INF/classes/com/test/Demo.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/test/Demo.class" afterPath="$PROJECT_DIR$/target/classes/com/test/Demo.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/work/jsp/org/apache/jsp/index_jsp.class" afterPath="$PROJECT_DIR$/target/work/jsp/org/apache/jsp/index_jsp.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/test/Demo.java" afterPath="$PROJECT_DIR$/src/main/java/com/test/Demo.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/CounterWebApp.war" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/CounterWebApp/WEB-INF/classes/com/test/Demo.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/CounterWebApp/WEB-INF/lib/activation-1.1.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/CounterWebApp/WEB-INF/lib/javax.servlet-api-3.1.0.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/CounterWebApp/WEB-INF/lib/jodd-3.6.4.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/CounterWebApp/WEB-INF/lib/mail-1.4.1.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/CounterWebApp/WEB-INF/web.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/CounterWebApp/css/bootstrap-datetimepicker.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/CounterWebApp/css/bootstrap-datetimepicker.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/CounterWebApp/css/bootstrap-theme.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/CounterWebApp/css/bootstrap-theme.css.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/CounterWebApp/css/bootstrap-theme.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/CounterWebApp/css/bootstrap.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/CounterWebApp/css/bootstrap.css.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/CounterWebApp/css/bootstrap.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/CounterWebApp/fonts/glyphicons-halflings-regular.eot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/CounterWebApp/fonts/glyphicons-halflings-regular.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/CounterWebApp/fonts/glyphicons-halflings-regular.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/CounterWebApp/fonts/glyphicons-halflings-regular.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/CounterWebApp/fonts/glyphicons-halflings-regular.woff2" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/CounterWebApp/img/bg.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/CounterWebApp/index.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/CounterWebApp/jquery/jquery-1.8.3.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/CounterWebApp/js/bootstrap-datetimepicker.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/CounterWebApp/js/bootstrap-datetimepicker.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/CounterWebApp/js/bootstrap.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/CounterWebApp/js/bootstrap.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/CounterWebApp/js/locales/bootstrap-datetimepicker.ar.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/CounterWebApp/js/locales/bootstrap-datetimepicker.bg.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/CounterWebApp/js/locales/bootstrap-datetimepicker.ca.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/CounterWebApp/js/locales/bootstrap-datetimepicker.cs.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/CounterWebApp/js/locales/bootstrap-datetimepicker.da.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/CounterWebApp/js/locales/bootstrap-datetimepicker.de.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/CounterWebApp/js/locales/bootstrap-datetimepicker.ee.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/CounterWebApp/js/locales/bootstrap-datetimepicker.el.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/CounterWebApp/js/locales/bootstrap-datetimepicker.es.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/CounterWebApp/js/locales/bootstrap-datetimepicker.fi.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/CounterWebApp/js/locales/bootstrap-datetimepicker.fr.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/CounterWebApp/js/locales/bootstrap-datetimepicker.he.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/CounterWebApp/js/locales/bootstrap-datetimepicker.hr.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/CounterWebApp/js/locales/bootstrap-datetimepicker.hu.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/CounterWebApp/js/locales/bootstrap-datetimepicker.id.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/CounterWebApp/js/locales/bootstrap-datetimepicker.is.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/CounterWebApp/js/locales/bootstrap-datetimepicker.it.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/CounterWebApp/js/locales/bootstrap-datetimepicker.ja.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/CounterWebApp/js/locales/bootstrap-datetimepicker.ko.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/CounterWebApp/js/locales/bootstrap-datetimepicker.lt.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/CounterWebApp/js/locales/bootstrap-datetimepicker.lv.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/CounterWebApp/js/locales/bootstrap-datetimepicker.ms.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/CounterWebApp/js/locales/bootstrap-datetimepicker.nb.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/CounterWebApp/js/locales/bootstrap-datetimepicker.nl.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/CounterWebApp/js/locales/bootstrap-datetimepicker.no.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/CounterWebApp/js/locales/bootstrap-datetimepicker.pl.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/CounterWebApp/js/locales/bootstrap-datetimepicker.pt-BR.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/CounterWebApp/js/locales/bootstrap-datetimepicker.pt.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/CounterWebApp/js/locales/bootstrap-datetimepicker.ro.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/CounterWebApp/js/locales/bootstrap-datetimepicker.rs-latin.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/CounterWebApp/js/locales/bootstrap-datetimepicker.rs.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/CounterWebApp/js/locales/bootstrap-datetimepicker.ru.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/CounterWebApp/js/locales/bootstrap-datetimepicker.sk.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/CounterWebApp/js/locales/bootstrap-datetimepicker.sl.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/CounterWebApp/js/locales/bootstrap-datetimepicker.sv.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/CounterWebApp/js/locales/bootstrap-datetimepicker.sw.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/CounterWebApp/js/locales/bootstrap-datetimepicker.th.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/CounterWebApp/js/locales/bootstrap-datetimepicker.tr.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/CounterWebApp/js/locales/bootstrap-datetimepicker.ua.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/CounterWebApp/js/locales/bootstrap-datetimepicker.uk.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/CounterWebApp/js/locales/bootstrap-datetimepicker.zh-CN.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/CounterWebApp/js/locales/bootstrap-datetimepicker.zh-TW.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/CounterWebApp/js/npm.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/CounterWebApp/success.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/test/Demo.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/dependency/activation-1.1.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/dependency/javax.servlet-api-3.1.0.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/dependency/jetty-runner.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/dependency/jodd-3.6.4.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/dependency/junit-3.8.1.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/dependency/mail-1.4.1.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/work/jsp/org/apache/jsp/index_jsp.class" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -43,11 +115,11 @@
     <splitter split-orientation="horizontal" split-proportion="0.5">
       <split-first>
         <leaf>
-          <file leaf-file-name="index.jsp" pinned="false" current-in-tab="true">
+          <file leaf-file-name="index.jsp" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.94464946" vertical-offset="1033" max-vertical-offset="2550">
-                  <caret line="103" column="25" selection-start-line="103" selection-start-column="25" selection-end-line="103" selection-end-column="25" />
+                <state vertical-scroll-proportion="-2.5833333" vertical-offset="1093" max-vertical-offset="2550">
+                  <caret line="77" column="15" selection-start-line="77" selection-start-column="15" selection-end-line="77" selection-end-column="15" />
                   <folding />
                 </state>
               </provider>
@@ -73,11 +145,11 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
+          <file leaf-file-name="pom.xml" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/pom.xml">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0" vertical-offset="664" max-vertical-offset="1245">
-                  <caret line="70" column="29" selection-start-line="70" selection-start-column="23" selection-end-line="70" selection-end-column="29" />
+                <state vertical-scroll-proportion="0.41696113" vertical-offset="214" max-vertical-offset="1245">
+                  <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="34" selection-end-column="19" />
                   <folding />
                 </state>
               </provider>
@@ -175,10 +247,10 @@
         <option value="$PROJECT_DIR$/src/main/webapp/css/bootstrap-datetimepicker.min.css" />
         <option value="$PROJECT_DIR$/src/main/webapp/success.html" />
         <option value="$PROJECT_DIR$/src/main/java/config.properties" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/config.properties" />
         <option value="$PROJECT_DIR$/src/main/java/com/test/Demo.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/index.jsp" />
+        <option value="$PROJECT_DIR$/pom.xml" />
       </list>
     </option>
   </component>
@@ -201,8 +273,8 @@
     <treeState />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="712" />
-    <option name="y" value="51" />
+    <option name="x" value="98" />
+    <option name="y" value="23" />
     <option name="width" value="1920" />
     <option name="height" value="977" />
   </component>
@@ -820,12 +892,12 @@
       <workItem from="1433396617635" duration="2393000" />
       <workItem from="1433405395338" duration="4004000" />
       <workItem from="1433474408921" duration="12376000" />
-      <workItem from="1434417190431" duration="7285000" />
+      <workItem from="1434417190431" duration="7472000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="79779000" />
+    <option name="totallyTimeSpent" value="79966000" />
   </component>
   <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
@@ -848,7 +920,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="712" y="51" width="1920" height="977" extended-state="6" />
+    <frame x="98" y="23" width="1920" height="977" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1267,14 +1339,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="664" max-vertical-offset="1245">
-          <caret line="70" column="29" selection-start-line="70" selection-start-column="23" selection-end-line="70" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/test/Demo.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.9734982" vertical-offset="214" max-vertical-offset="1470">
@@ -1287,8 +1351,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.94464946" vertical-offset="1033" max-vertical-offset="2550">
-          <caret line="103" column="25" selection-start-line="103" selection-start-column="25" selection-end-line="103" selection-end-column="25" />
+        <state vertical-scroll-proportion="-2.5833333" vertical-offset="1093" max-vertical-offset="2550">
+          <caret line="77" column="15" selection-start-line="77" selection-start-column="15" selection-end-line="77" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.41696113" vertical-offset="214" max-vertical-offset="1245">
+          <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="34" selection-end-column="19" />
           <folding />
         </state>
       </provider>

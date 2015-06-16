@@ -5,13 +5,13 @@
 
 
         function check(){
-            if (!$('#username').val()=="")
+            if (!$('#username').val()=="staff")
             {
                 ;
             }
             else
             {
-                alert("please type name");
+                alert("please choose name");
                 return false;
             }
             if (!$('#start').val()=="")
@@ -41,24 +41,6 @@
                 alert("please type day");
                 return false;
             }
-            if (!$('#phone').val()=="")
-            {
-                ;
-            }
-            else
-            {
-                alert("please type phone");
-                return false;
-            }
-            if (/^[0-9-]{11,20}$/.test($('#phone').val()))
-            {
-                ;
-            }
-            else
-            {
-                alert("please input 11 phone number");
-                return false;
-            }
             if (/^[0-9.]+$/.test($('#day').val()))
             {
                 return true;
@@ -85,16 +67,40 @@
         <div class="row-fluid">
         <form class="form-signin" name="fom" onsubmit="return check();" action="${pageContext.request.contextPath}/Demo" method="post">
             <h2 class="form-signin-heading">Apply For Leave</h2>
-            <label for="username" class="sr-only">Username</label>
-            <input type="text" name="username" id="username" class="form-control" placeholder="Name" required autofocus><br>
-            <select class="form-control" name="department">
-                <option>Team</option>
-                <option>Epic</option>
-                <option>CRM</option>
-                <option>Pulse</option>
-                <option>Ratchet</option>
-                <option>Web Bench</option>
-                <option>HR</option>
+            <select class="form-control" name="username">
+                <option>Staff</option>
+                <option>Angela Yao</option>
+                <option>Angelo Chen</option>
+                <option>Albert Zhang</option>
+                <option>Allen Li</option>
+                <option>Annie Ling</option>
+                <option>Carol Wang</option>
+                <option>Colin Chen</option>
+                <option>Cristina Wang</option>
+                <option>Dean Song</option>
+                <option>Daisy Ding</option>
+                <option>Edith Sun</option>
+                <option>Fisher Yu</option>
+                <option>Gavin Zhang</option>
+                <option>Iris Li</option>
+                <option>Jason Peng</option>
+                <option>Jerry Gu</option>
+                <option>Jessie Yu</option>
+                <option>John Hao</option>
+                <option>Jack Zhou</option>
+                <option>Jay Zhang</option>
+                <option>John Xu</option>
+                <option>Juni Yang</option>
+                <option>Michael Zhao</option>
+                <option>Owen Xu</option>
+                <option>Rosie Zhou</option
+                <option>Sandy Chen</option>
+                <option>Scandy Shen</option>
+                <option>Simon Chen</option>
+                <option>Sky Wang</option>
+                <option>Summer Song</option>
+                <option>Ward Miao</option>
+                <option>William Wu</option>
             </select><br>
             <select class="form-control" name="type">
                 <option>Leave Type</option>
@@ -127,8 +133,6 @@
 
             <label for="day" class="sr-only">other</label>
             <input type="text" name="other" id="day" class="form-control" placeholder="How many days?" required autofocus><br>
-            <label for="phone" class="sr-only">phone</label>
-            <input type="text" name="phone" id="phone" class="form-control" placeholder="Contact Phone?" required autofocus><br>
 
             <label for="reason" class="sr-only">phone</label>
             <textarea name="reason" id="reason" class="form-control" placeholder="Reason" ></textarea><br>
