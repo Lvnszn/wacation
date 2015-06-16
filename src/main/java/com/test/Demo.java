@@ -2,7 +2,6 @@ package com.test;
 
 
 import jodd.mail.SendMailSession;
-import jodd.mail.SimpleAuthenticator;
 import jodd.mail.SmtpServer;
 import jodd.mail.Email;
 
