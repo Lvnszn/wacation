@@ -126,7 +126,7 @@
                 var end = days(endMon,endDay);
                 if(start < end)
                     ;
-                else{
+                else {
                     alert("end time must lager than start time");
                     return false;
                 }
@@ -161,7 +161,7 @@
         }
 
         function alertMsg(msg, mode) { //mode为空，即只有一个确认按钮，mode为1时有确认和取消两个按钮
-            msg = msg || '';
+            msg = "<center>"+msg+"</center>"+ "<br><font style='color:orange; font-size: 12px'> Warning! When your leave span 2 months, please make two applyments, ie. you can only make leave apply in one month per apply</font>";
             mode = mode || 0;
             var top = document.body.scrollTop || document.documentElement.scrollTop;
             var isIe = (document.all) ? true : false;
@@ -287,7 +287,7 @@
 <body>
     <div class="container-fluid">
         <div class="row-fluid">
-        <form class="form-signin" name="form" id="form" onsubmit="return alertMsg('Are you '+$('#username').val(),1);" action="${pageContext.request.contextPath}/Demo" method="post">
+        <form class="form-signin" name="form" id="form" onsubmit="return alertMsg('Are you '+$('#username').val()+'?',1);" action="${pageContext.request.contextPath}/Demo" method="post">
             <h2 class="form-signin-heading">Apply For Leave</h2>
             <select class="form-control" name="username" id="username">
                 <option>Staff</option>
