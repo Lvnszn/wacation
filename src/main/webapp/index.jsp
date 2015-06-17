@@ -42,6 +42,59 @@
     </style>
     <script type="text/javascript">
 
+        function days(mon,day){
+            var m,d;
+            d=parseInt(day);
+            switch (mon){
+                case 'January':
+                    m=0;
+                    break;
+                case 'February':
+                    m=31;
+                    break;
+                case 'March':
+                    m=58;
+                    break;
+                case 'April':
+                    m=89;
+                    break;
+                case 'May':
+                    m=119;
+                    break;
+                case 'June':
+                    m=150;
+                    break;
+                case 'July':
+                    m=181;
+                    break;
+                case 'August':
+                    m=212;
+                    break;
+                case 'September':
+                    m=242;
+                    break;
+                case 'October':
+                    m=273;
+                    break;
+                case 'November':
+                    m=304;
+                    break;
+                case 'December':
+                    m=334;
+                    break;
+            }
+            return m+d;
+        }
+
+        function day(date){
+            var day = date.split(" ");
+            return day[0];
+        }
+
+        function mon(date){
+            var day = date.split(" ");
+            return day[1];
+        }
 
         function check(){
             if ($('#username').val()!="staff")
@@ -64,7 +117,19 @@
             }
             if (!$('#end').val()=="")
             {
-                ;
+                var startMon = mon($('#start').val());
+                var endMon = mon($('#end').val());
+                var startDay = day($('#start').val());
+                var endDay = day($('#end').val());
+
+                var start = days(startMon,startDay);
+                var end = days(endMon,endDay);
+                if(start < end)
+                    ;
+                else{
+                    alert("end time must lager than start time");
+                    return false;
+                }
             }
             else
             {
