@@ -97,7 +97,7 @@
         }
 
         function check(){
-            if ($('#username').val()!="staff")
+            if ($('#username').val()!="Staff")
             {
                 ;
             }
@@ -106,7 +106,7 @@
                 alert("please choose name");
                 return false;
             }
-            if (!$('#start').val()=="")
+            if ($('#start').val()!="")
             {
                 ;
             }
@@ -115,7 +115,7 @@
                 alert("please type start time");
                 return false;
             }
-            if (!$('#end').val()=="")
+            if ($('#end').val()!="")
             {
                 var startMon = mon($('#start').val());
                 var endMon = mon($('#end').val());
@@ -124,10 +124,14 @@
 
                 var start = days(startMon,startDay);
                 var end = days(endMon,endDay);
-                if(start < end)
+                if(start <= end && startMon==endMon)
                     ;
-                else {
+                else if (start > end && startMon==endMon){
                     alert("end time must lager than start time");
+                    return false;
+                }
+                else {
+                    alert("start Month should equal end Month");
                     return false;
                 }
             }
@@ -136,7 +140,7 @@
                 alert("please type end time");
                 return false;
             }
-            if (!$('#day').val()=="")
+            if ($('#day').val()!="")
             {
                 ;
             }
@@ -291,26 +295,25 @@
             <h2 class="form-signin-heading">Apply For Leave</h2>
             <select class="form-control" name="username" id="username">
                 <option>Staff</option>
-                <option>Angela Yao</option>
-                <option>Angelo Chen</option>
                 <option>Albert Zhang</option>
                 <option>Allen Li</option>
+                <option>Angela Yao</option>
+                <option>Angelo Chen</option>
                 <option>Annie Ling</option>
                 <option>Carol Wang</option>
                 <option>Colin Chen</option>
                 <option>Cristina Wang</option>
-                <option>Dean Song</option>
                 <option>Daisy Ding</option>
+                <option>Dean Song</option>
                 <option>Edith Sun</option>
                 <option>Fisher Yu</option>
                 <option>Gavin Zhang</option>
                 <option>Iris Li</option>
+                <option>Jack Zhou</option>
                 <option>Jason Peng</option>
                 <option>Jerry Gu</option>
                 <option>Jessie Yu</option>
                 <option>John Hao</option>
-                <option>Jack Zhou</option>
-                <option>Jay Zhang</option>
                 <option>John Xu</option>
                 <option>Juni Yang</option>
                 <option>Michael Zhao</option>
