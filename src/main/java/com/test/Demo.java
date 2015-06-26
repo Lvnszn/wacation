@@ -46,7 +46,7 @@ public class Demo extends javax.servlet.http.HttpServlet {
         String text =
                 "<meta name='viewport' content='width=device-width, initial-scale=1'>" +
                 "<div style='width:512px;height:auto;margin:0px auto;font-family:Calibriborder-radius:5px;padding:5px;'>"+
-                "<table  border='0' style='background:img/bg.png;'align=center width=400px><tr><td colspan='2'><font style='padding:0px 50px;font-weight:bold;font-size:18px'>Apply For Leave</font></td></tr>" +
+                "<table  border='0' style='background:img/bg.png;'align=center width=400px><tr><td colspan='2'><font style='padding:0px 0px;font-weight:bold;font-size:18px'>Apply For Leave<hr></font></td></tr>" +
                         "<tr><td><table><tr><td></td></tr></table></td></tr>" +
                         "<tr><td align=left><font style='font-weight:bold;font-size:15px'>Staff</font></td><td><font style='padding:0px 40px;font-size:15px'> "+username+"</font></td></tr>" +
                         "<tr><td align=left><font style='font-weight:bold;font-size:15px'>Leave Type:</font></td><td><font style='padding:0px 40px;font-size:15px'> "+type+"</font></td></tr>"+
