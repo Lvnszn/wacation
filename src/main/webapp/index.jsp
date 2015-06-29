@@ -291,7 +291,7 @@
 <body>
     <div class="container-fluid">
         <div class="row-fluid">
-        <form class="form-signin" name="form" id="form" onsubmit="return alertMsg('Are you '+$('#username').val()+'?',1);" action="${pageContext.request.contextPath}/wechatVacation" method="post">
+        <form class="form-signin" name="form" id="form" onsubmit="return alertMsg('Are you '+$('#username').val()+'?',1);" action="${pageContext.request.contextPath}/WechatVacation" method="post">
             <h2 class="form-signin-heading">Apply For Leave</h2>
             <select class="form-control" name="username" id="username">
                 <option>Staff</option>

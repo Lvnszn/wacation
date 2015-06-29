@@ -14,7 +14,7 @@ import java.util.Properties;
 /**
  * Created by jasonpeng on 5/27/15.
  */
-public class wechatVacation extends javax.servlet.http.HttpServlet {
+public class WechatVacation extends javax.servlet.http.HttpServlet {
 
 
 

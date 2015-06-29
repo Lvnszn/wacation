@@ -7,15 +7,15 @@
     <display-name>Counter Web Application</display-name>
 
     <servlet>
-        <servlet-name>Demo</servlet-name>
+        <servlet-name>WechatVacation</servlet-name>
         <servlet-class>
-            com.xplusz.wechatVacation
+            com.xplusz.WechatVacation
         </servlet-class>
     </servlet>
 
     <servlet-mapping>
-        <servlet-name>Demo</servlet-name>
-        <url-pattern>/Demo</url-pattern>
+        <servlet-name>WechatVacation</servlet-name>
+        <url-pattern>/WechatVacation</url-pattern>
     </servlet-mapping>
 
 
