@@ -298,7 +298,6 @@
                 <option>Albert Zhang</option>
                 <option>Allen Li</option>
                 <option>Angela Yao</option>
-                <option>Angelo Chen</option>
                 <option>Annie Ling</option>
                 <option>Carol Wang</option>
                 <option>Colin Chen</option>

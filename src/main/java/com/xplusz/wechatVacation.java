@@ -1,4 +1,4 @@
-package com.test;
+package com.xplusz;
 
 
 import jodd.mail.SendMailSession;

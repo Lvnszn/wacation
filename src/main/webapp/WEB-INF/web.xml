@@ -9,7 +9,7 @@
     <servlet>
         <servlet-name>Demo</servlet-name>
         <servlet-class>
-            com.test.wechatVacation
+            com.xplusz.wechatVacation
         </servlet-class>
     </servlet>
 
