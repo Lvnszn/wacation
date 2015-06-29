@@ -248,7 +248,7 @@
             var btn1 = document.createElement('a');
             btn1.id = 'alertMsg_btn1';
             btn1.href = 'javas' + 'cript:void(0)';
-            btn1.innerHTML = '<cite>确定</cite>';
+            btn1.innerHTML = '<cite>ok</cite>';
             btn1.onclick = function () {
                 if(check()) {
                     document.body.removeChild(alertBox);
@@ -268,7 +268,7 @@
                 var btn2 = document.createElement('a');
                 btn2.id = 'alertMsg_btn2';
                 btn2.href = 'javas' + 'cript:void(0)';
-                btn2.innerHTML = '<cite>取消</cite>';
+                btn2.innerHTML = '<cite>cancel</cite>';
                 btn2.onclick = function () {
                     document.body.removeChild(alertBox);
                     document.body.removeChild(shadowDiv);
@@ -291,7 +291,7 @@
 <body>
     <div class="container-fluid">
         <div class="row-fluid">
-        <form class="form-signin" name="form" id="form" onsubmit="return alertMsg('Are you '+$('#username').val()+'?',1);" action="${pageContext.request.contextPath}/Demo" method="post">
+        <form class="form-signin" name="form" id="form" onsubmit="return alertMsg('Are you '+$('#username').val()+'?',1);" action="${pageContext.request.contextPath}/wechatVacation" method="post">
             <h2 class="form-signin-heading">Apply For Leave</h2>
             <select class="form-control" name="username" id="username">
                 <option>Staff</option>
